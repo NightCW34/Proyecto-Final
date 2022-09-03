@@ -6,7 +6,7 @@ import styled from "styled-components/native";
 import { colors } from "../components/colors";
 import { Container } from "../components/shared";
 import BigText from "../components/Texts/BigText";
-import SmallText from '../components/Texts/SmallText';
+import SmallText from "../components/Texts/SmallText";
 import RegularButton from "../components/Buttons/RegularButton";
 
 const WelcomeContainer = styled(Container)`
@@ -32,7 +32,7 @@ const BottomSection = styled.View`
   width: 100%;
   padding: 25px;
   flex: 1;
-  Justify-content: flex-end;
+  justify-content: flex-end;
 `;
 
 //Image
@@ -48,15 +48,14 @@ const Welcome: FunctionComponent = () => {
           <TopImage source={background} />
         </TopSection>
         <BottomSection>
-            <BigText textStyles = {{ width: "70%", marginBottom: 25}}>
+          <BigText textStyles={{ width: "70%", marginBottom: 25 }}>
             La mejor manera de rastrear su dinero
-            </BigText>
-            <SmallText textStyles = {{ width: "70%", marginBottom: 25}}>
-            El mejor método de pago, conecta tu dinero con tus amigos, familiares
-            </SmallText>
-            <RegularButton onPress={() => {}}>
-                Empezar
-            </RegularButton>
+          </BigText>
+          <SmallText textStyles={{ width: "70%", marginBottom: 25 }}>
+            El mejor método de pago, conecta tu dinero con tus amigos,
+            familiares
+          </SmallText>
+          <RegularButton onPress={() => {}}>Empezar</RegularButton>
         </BottomSection>
       </WelcomeContainer>
     </>
