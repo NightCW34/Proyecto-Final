@@ -36,10 +36,15 @@ const BottomSection = styled.View`
 `;
 
 //Image
-
 import background from "./../assets/bgs/background_v1.png";
 
-const Welcome: FunctionComponent = () => {
+//types
+import { RootStackParamList } from "../navigators/RootStack";
+import { StackScreenProps } from "@react-navigation/stack";
+type Props = StackScreenProps<RootStackParamList, "Welcome">;
+
+
+const Welcome: FunctionComponent<Props> = ({navigation}) => {
   return (
     <>
       <StatusBar style="light" />
@@ -55,7 +60,7 @@ const Welcome: FunctionComponent = () => {
             El mejor método de pago, conecta tu dinero con tus amigos,
             familiares
           </SmallText>
-          <RegularButton onPress={() => {}}>Empezar</RegularButton>
+          <RegularButton onPress={() => { navigation.navigate("Home")}}>Empezar</RegularButton>
         </BottomSection>
       </WelcomeContainer>
     </>

@@ -24,7 +24,12 @@ import portrait1 from "./../assets/portraits/1.jpg";
 import portrait2 from "./../assets/portraits/2.jpg";
 import portrait3 from "./../assets/portraits/3.jpg";
 
-const Home: FunctionComponent = () => {
+//types
+import { RootStackParamList } from "../navigators/RootStack";
+import { StackScreenProps } from "@react-navigation/stack";
+export type Props = StackScreenProps<RootStackParamList, "Home">;
+
+const Home: FunctionComponent<Props> = () => {
   const cardsData = [
     {
       id: 1,
