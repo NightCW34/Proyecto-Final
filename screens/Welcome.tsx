@@ -25,7 +25,7 @@ const TopSection = styled.View`
 const TopImage = styled.Image`
   width: 100%;
   height: 100%;
-  rezize-mode: stretch;
+  resize-mode: stretch;
 `;
 
 const BottomSection = styled.View`

@@ -8,7 +8,7 @@ import { colors } from "../colors";
 const StyledText = styled.Text`
   font-size: 37px;
   color: ${colors.white};
-  text-aling: left;
+  text-align: left;
   font-family: Lato-Bold;
 `;
 

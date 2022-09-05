@@ -12,7 +12,7 @@ import { colors } from "../colors";
 import RegularText from "./../Texts/RegularText";
 
 const ButtonView = styled.TouchableOpacity`
-  aling-items: center;
+  align-items: center;
   background-color: ${colors.primary};
   width: 100%;
   padding: 20px;
